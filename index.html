@@ -1,5 +1,64 @@
 <!DOCTYPE html>
+
 <html>
+  <style>
+      @media(max-width: 600px) {
+    #menu-button {
+      padding:10px;
+      display: block;
+      align-self: stretch;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    header{
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      
+      position: fixed;
+      left:0;
+      right:0;
+      top:0;
+      height: 60px;
+      box-shadow: 0 -15px 10px 20px gray;
+    }
+
+    main {
+      padding-top:60px;
+    }
+
+
+    h1{
+      color:white;
+    }
+
+    nav {
+      display: none;
+      position: absolute;
+      top:100%;
+      right:0;
+      flex-direction: column;
+    }
+    nav.open {
+      display: block;
+    }
+
+    nav > ul {
+      flex-direction: column;
+    }
+    nav > ul > li {
+      border-top: 1px solid white;
+    }
+    nav>ul>li:active, .active{
+      background-color: rebeccapurple;
+    }
+
+  }
+  </style>
   <head>
     <title>Dhimiters</title>
     <link rel="stylesheet" href="style.css">
