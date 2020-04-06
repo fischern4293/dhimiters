@@ -1,36 +1,90 @@
+@import url(https://fonts.googleapis.com/css2?family=Caesar+Dressing&display);
 
 
 p {
   font-size: 18pt;
 }
 
-h1 {
-  font-size: 40px;
-  font-family: sans-serif;
-  margin: 0;
+body {
+  margin:0;
+  background-color: white;
 }
-  nav{
-    background-color: black;
-    color:white;
-    font-family: sans-serif;
+  #mainHeader{
+    font-size: 70px;
+    font-family:'Caesar Dressing';
+    justify-content: flex-start;
+    text-align: center;
 
+  }
+  nav{
+    margin:0;
+    background-color: rgba(75, 0, 0, 0.952);
+    border: none;
+    font-family: sans-serif;
+    width: 100%;
   }   
-  nav > ul {
+
+#food{
+  border-radius: 5px;
+  padding-top:5px;
+
+}
+
+#menu_main {
+  display: flex;
+  justify-content: center;
+  background-color:rgba(117, 0, 0, 0.582) ;
+}
+
+  #home_main {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    
+    box-shadow: 10px 10px 16px -13px rgba(0,0,0,0.75);
+    justify-content: space-evenly
+  }
+#foodMenu {
+  width: 75%;
+  align-self: center;
+}
+  #home {
+    font-size: 70px;
+    font-family:'Caesar Dressing';
+    justify-content: flex-start;
+    padding-bottom:0;
+    border-left : none;
+    padding-right: 150px;
+  }
+  #home:hover{
+    background-color: transparent;
+    padding-bottom:0;
+  }
+#menu{
+  border-left: none;
+}
+  nav > ul  {
     display:flex;
     list-style: none;
-    justify-content: space-between;
-    padding:0;
+    justify-content: center; 
     font-size: 20px;
     margin:0;
-
-
-  }
-  nav>ul>li{
-    padding:10px;
+    align-items: baseline; 
   }
 
-  nav>ul>li:hover{
-    background-color: grey;
+  nav>ul>li>a{
+    
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    padding: 10px;
+    border-left: solid white 1px ;
+    
+  }
+
+  nav>ul>li>a:hover{
+    background-color: rgba(117, 0, 0, 0.582);
   }
   #menu-button {
     display: none;
@@ -44,15 +98,21 @@ h1 {
       display:flex;
       justify-content: center;
       align-items: center;
-
     }
+
+    #home{ 
+    padding: 0;
+    font-size: 30px;
+    font-family:'Caesar Dressing';
+    padding-right: 25%;
+    }
+
     header{
-      background-color: black;
+      background-color:  rgb(134, 2, 2);
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      
       position: fixed;
       left:0;
       right:0;
@@ -69,6 +129,9 @@ h1 {
     h1{
       color:white;
     }
+    h1>img{
+      width:120px;
+    }
 
     nav {
       display: none;
@@ -83,56 +146,16 @@ h1 {
 
     nav > ul {
       flex-direction: column;
+     
     }
-    nav > ul > li {
-      border-top: 1px solid white;
+    nav > ul > li >a {
+      border-top: 1px solid rgb(131, 105, 105);
+      padding-top:0;
+      padding-bottom:0;
+      border:none;
     }
+
     nav>ul>li:active, .active{
-      background-color: rebeccapurple;
+      background-color: rgb(134, 2, 2);
     }
-
   }
-
-
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-
-
-
-</head>
-<body>
-  <header>
-    <h1>Sanco, Inc.</h1>
-
-    <div id="menu-button">
-      <svg viewBox="0 0 100 80" width="30" height="30">
-        <rect fill="white" width="100" height="15"></rect>
-        <rect fill="white" y="30" width="100" height="15"></rect>
-        <rect fill="white" y="60" width="100" height="15"></rect>
-      </svg>
-    </div>
-
-    <nav id="navigation">
-      <ul>
-        <li>Alpha</li>
-        <li>Beta</li>
-        <li>Gamma</li>
-        <li>Alpha</li>
-        <li>Beta</li>
-        <li>Gamma</li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aspernatur tempore, obcaecati repellat recusandae nobis, itaque minima perspiciatis dignissimos voluptas quo accusantium impedit perferendis saepe consequuntur, dolor explicabo. Inventore voluptas magni, enim sed vel quo consectetur labore veniam dolores similique. Asperiores, accusantium! Quae vitae, earum atque autem excepturi minus reprehenderit.</p>
-    <p>Voluptatum doloribus consequuntur unde autem veniam nesciunt quos obcaecati quae ratione in, aut quasi possimus consectetur, ipsa minus dolor modi magnam cumque explicabo velit, placeat quo. Dolor atque modi aspernatur quaerat, velit ex accusamus a voluptatem optio, repudiandae doloribus dolorum similique sequi itaque expedita laborum beatae quasi voluptates distinctio esse?</p>
-    <p>Illo saepe, repellat distinctio nisi quae culpa quod facilis quidem quis debitis quisquam beatae nostrum quia mollitia ipsa magni nihil modi vitae accusamus. Dolore animi nisi accusantium magni! Neque itaque atque, omnis dolore nam animi, asperiores, nemo in dignissimos repellendus nulla beatae necessitatibus a quibusdam non quisquam nostrum ipsa aliquid!</p>
-    <p>Voluptatibus quibusdam debitis provident doloremque, cupiditate nostrum atque, laborum consequuntur est facere reiciendis hic aspernatur quidem laboriosam et soluta asperiores odio, tenetur blanditiis? Praesentium aliquam adipisci expedita ut? Enim ipsam quam veritatis, ut at odit commodi id repellendus culpa inventore obcaecati reprehenderit, fugit iste laboriosam quos! Quam odio in nobis?</p>
-    <p>Quisquam cum eveniet dolorem, perferendis culpa reprehenderit eligendi et nam porro veritatis neque repellendus. Iure sunt veritatis, impedit ipsa tenetur recusandae, soluta reiciendis illo harum dolor dolores sint, labore nesciunt ipsum error quisquam iste libero dolorem. Nemo nobis aliquid voluptate, recusandae error deleniti voluptas minima quibusdam accusantium? Fuga, quos dolorem!</p>
-    <p>Fugit, debitis minus. Modi ut, iusto deserunt recusandae ullam quibusdam reprehenderit fugit totam repellendus enim perferendis animi optio dolorem laborum eligendi sed, vitae praesentium consequatur pariatur tenetur laudantium? Tempore provident quod molestias quasi. Recusandae id asperiores vel voluptas, dolore, saepe perferendis fugiat harum at, tempora voluptates ad magni debitis sint!</p>
-    <p>Nam repellendus, quae amet nemo vel ab autem aliquam harum dignissimos dolorem eius pariatur perferendis ex perspiciatis! Neque, ipsam culpa! Numquam tempore illum consequuntur perferendis nihil praesentium animi officiis repellat sed doloribus temporibus similique aspernatur non corrupti magni, voluptatem vel quia eveniet veritatis, dolor pariatur ipsum odit molestias culpa? Asperiores.</p>
-    <p>Corporis dolorum, facilis optio quibusdam, quam, tempora distinctio tempore ex voluptatibus rem asperiores ratione voluptates? Possimus sit consequatur in voluptate repudiandae magnam obcaecati animi. Laborum repudiandae inventore, tenetur nam praesentium impedit earum, accusantium expedita molestiae facilis veritatis odio officia ea consequatur aliquam recusandae dolore asperiores voluptatum? Quos eius et placeat.</p>
-    <p>Perferendis, eius eum voluptatibus explicabo dicta aperiam nam possimus quae dolor aut quisquam ut beatae aspernatur eos sint. Corrupti maiores molestiae neque qui quae enim. Ea eos ab debitis aperiam quas? Nobis esse a culpa repudiandae consectetur, quae non. Fugiat ea facere impedit id incidunt enim voluptas ullam distinctio doloribus!</p>
-    <p>Accusamus vitae iusto quidem culpa unde, totam dignissimos perferendis vel! Placeat ratione laborum sunt blanditiis reprehenderit culpa, illo fugit quisquam deserunt. Recusandae, modi quia ducimus repellendus maxime pariatur deserunt neque, ipsa sequi a id. Impedit rem officiis voluptate hic veritatis, voluptatibus voluptatem incidunt eaque eius, deleniti aliquam, totam quod doloremque.</p>
-  </main>
