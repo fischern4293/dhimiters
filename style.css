@@ -1,5 +1,173 @@
 @import url(https://fonts.googleapis.com/css2?family=Caesar+Dressing&display);
 
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  background: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid white;
+  box-shadow: 0px 5px 5px rgb(87, 62, 62);
+}
+.container .box {
+  width: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .box .title {
+  width: 700px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height:60px;
+  justify-content: start;
+  padding-right:500px;
+}
+.container .box .title .block {
+  width: 0%;
+  height: inherit;
+  background: #a32f2fe1;
+  position: absolute;
+  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+ 
+}
+.container .box .title h1 {
+  font-family: 'Caesar Dressing', sans-serif;
+  color: #fff;
+  font-size: 40px;
+  -webkit-animation: mainFadeIn 2s forwards;
+  -o-animation: mainFadeIn 2s forwards;
+  animation: mainFadeIn 2s forwards;
+  animation-delay: 1.6s;
+  opacity: 0;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  white-space: nowrap;
+  letter-spacing: 7px;
+  padding-right: 20px;
+  
+  
+}
+
+.container .box .role {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-top: -10px;
+  padding-left: 25px;
+}
+.container .box .role .block {
+  width: 0%;
+  height: inherit;
+  background: #e91e63;
+  position: absolute;
+  animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 2s;
+  display: flex;
+}
+.container .box .role p {
+  animation: secFadeIn 2s forwards;
+  animation-delay: 3.2s;
+  opacity: 0;
+  font-weight: 400;
+  font-family: 'Caesar Dressing',sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes popIn {
+  0% {
+    width: 0px;
+    height: 0px;
+    background: #e9d856;
+    border: 0px solid #ddd;
+    opacity: 0;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    background: #e9d856;
+    opacity: 1;
+    bottom: 45px;
+  }
+  65% {
+    width: 7px;
+    height: 7px;
+    bottom: 0px;
+    width: 15px;
+  }
+  80% {
+    width: 10px;
+    height: 10px;
+    bottom: 20px;
+  }
+  /* 100% {
+    width: 7px;
+    height: 7px;
+    background: #e9d856;
+    border: 0px solid #222;
+    bottom: 13px;
+  } */
+}
+@keyframes secFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
 
 p {
   font-size: 18pt;
@@ -11,7 +179,7 @@ body {
 }
   #mainHeader{
     font-size: 70px;
-    font-family:'Caesar Dressing';
+    font-family:'Caesar Dressing', sans-serif;
     justify-content: flex-start;
     text-align: center;
 
@@ -22,6 +190,7 @@ body {
     border: none;
     font-family: sans-serif;
     width: 100%;
+    box-shadow: 0px 5px 5px black;
   }   
 
 #food{
@@ -98,6 +267,9 @@ body {
       display:flex;
       justify-content: center;
       align-items: center;
+    }
+    .container {
+      visibility: hidden;
     }
 
     #home{ 
