@@ -475,6 +475,21 @@ input[type=submit]:hover {
 
 
   @media(max-width: 600px) {
+    main h1 {
+      color:black;
+    }
+    .foodTruck_main {
+      flex-direction: column;
+    }
+    #location_main{
+      flex-direction: column;
+      height: 85vw;
+      align-items: center;
+    }
+    #location_para {
+      text-align: center;
+    }
+
     #menu-button {
       padding:10px;
       display: block;
