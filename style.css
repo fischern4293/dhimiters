@@ -374,7 +374,7 @@ input[type=submit]:hover {
   color: white;
 }
  body{
-  background-image: url("website_photos/background.jpeg");
+  background-image: url(website_photos/background.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
 } 
@@ -439,7 +439,7 @@ input[type=submit]:hover {
   box-sizing: border-box;
   background-color: rgba(75, 0, 0, 0.952);
 
-  opacity:.8;
+  opacity:.9;
 }
 
 .inner_footer{
