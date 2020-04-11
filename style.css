@@ -374,7 +374,7 @@ input[type=submit]:hover {
   color: white;
 }
  body{
-  background-image: url(website_photos/background.jpeg);
+  background-image: url("https://www.therealgreek.com/wp-content/uploads/2019/10/003_48.1_TRG_WESTFIELD_PC_155_web-2232x1273.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
 } 
