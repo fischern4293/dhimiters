@@ -24,6 +24,12 @@
   align-items: stretch;
 
 }
+.inner_footer{
+  display:block;
+  margin: 0 auto;
+  width: 1100px;
+  height:100px;
+}
 
 #location_para {
   font-size: 28px;
